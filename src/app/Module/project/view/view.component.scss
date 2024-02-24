@@ -153,6 +153,10 @@ button {
     box-shadow: 0 0 20px rgba(39, 174, 96, 0.5);
   }
 }
+span{
+  position: fixed;
+  margin-left: 150px;
+}
 .explainer {
   font-weight: bold;
   font-size: 2.5rem;
@@ -166,6 +170,7 @@ button {
   left:50px;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: #fff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   padding: 20px;
