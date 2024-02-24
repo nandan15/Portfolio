@@ -1,0 +1,14 @@
+p{
+    text-align: center;
+}
+.main{
+    height: 100vh;
+}
+.open:hover{
+    color: blue;
+}
+.close {
+    right: 10px;
+    float:right;
+    display: flex;
+  }
