@@ -6,16 +6,17 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   animations: [
-    trigger('bounceAnimation', [
-      state('initial', style({
-        transform: 'translateY(-100%)',
-        opacity: 0
-      })),
-      state('final', style({
+    trigger('slideInOut', [
+      state('in', style({
         transform: 'translateY(0)',
         opacity: 1
       })),
-      transition('initial => final', animate('1s ease-in-out'))
+      state('out', style({
+        transform: 'translateY(-100%)',
+        opacity: 0
+      })),
+      transition('in => out', animate('400ms ease-out')),
+      transition('out => in', animate('400ms ease-in'))
     ])
   ]
 })
@@ -29,7 +30,7 @@ export class HomeComponent implements OnInit {
       this.isLoading = false;
       this.startTextAnimation(0);
       this.startBounceAnimation();
-    }, 3000); // Adjust the duration (in milliseconds) as needed
+    }, 3000); 
   }
 
   typeWriter(text: string, i: number, fnCallback: () => void) {

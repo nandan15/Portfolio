@@ -13,10 +13,8 @@ export class ViewComponent {
 
 }
 
-  openDialog():void{
-    // this.newEmployee.FirstName="";
+  openDialog12():void{
     const dialogRef=this.dialog.open(ECommerceComponent,{
-      // data:{record:this.newEmployee}
     });
     dialogRef.afterClosed().subscribe(result=>{
       console.log("The dialog was closed");

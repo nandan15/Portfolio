@@ -1,1 +1,14 @@
-<p>movie works!</p>
+<p class="center">Movie Recommendation<button class="close" mat-raised-button color="warn" (click)="closeForm()">X</button></p>
+<div class="main" style="width:840px; height:500px; text-align:center;margin:0; padding: 0;">
+<ng-image-slider #nav
+[images]="imageObject"[infinite]="false" [autoSlide]="1" [imageSize]="{width:'100%',height:400}"
+slideImage="1"></ng-image-slider>
+<div class="footer">
+    <h3>
+        Movie Recommendation System 
+    </h3>
+    <div class="open">
+        <button mat-button (click)="open()">Open</button>
+    </div>
+</div>
+</div>
