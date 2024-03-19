@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectComponent } from './project/project.component';
-import { ViewComponent } from './view/view.component';
 import { projectrouter } from './project.router';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,6 +13,7 @@ import { IotComponent } from './iot/iot.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { MatButtonModule } from '@angular/material/button';
 import { OpenComponent } from './e-commerce/open/open.component';
+import { ViewComponent } from './view/view.component';
 
 @NgModule({
   declarations: [

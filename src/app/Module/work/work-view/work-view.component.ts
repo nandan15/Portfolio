@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./work-view.component.scss']
 })
 export class WorkViewComponent {
+  isExpanded: boolean = false;
 
+  expandParent() {
+      this.isExpanded = !this.isExpanded;
+  }
 }

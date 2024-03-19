@@ -1,1 +1,17 @@
-<p>work-view works!</p>
+<div class="container">
+    <h4>Experience</h4>
+    <h2>MY WORK EXPERIENCE</h2>
+    <div class="parent" [class.expanded]="isExpanded">
+        <div class="child">
+            <h2>Software Development Engineer</h2>
+            <h3>On-Site|Bangalore<br>November 2023 - Present</h3>
+            
+        </div>
+        <button class="view" mat-button (click)="expandParent()">
+            <i class="fas fa-expand"></i>
+        </button>
+        <div *ngIf="isExpanded" class="additional-content"> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laboriosam ad, omnis, obcaecati, totam quaerat veniam dicta eos consequatur nobis dolorum natus tenetur maiores architecto consequuntur necessitatibus similique id ratione!</p>
+        </div>
+    </div>
+</div>

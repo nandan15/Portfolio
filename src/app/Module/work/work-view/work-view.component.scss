@@ -1,0 +1,56 @@
+.parent {
+    width: 23rem;
+    min-width: 23rem; /* Ensure minimum width */
+    height: 200px;
+    background: transparent;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    padding-left: 25px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: width 0.5s ease;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Align child and additional content at the ends */
+}
+
+.child {
+    background-color: rgba(30, 143, 255, 0.479);
+    width: 300px;
+    min-width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative; /* Add this line */
+}
+
+.child::after {
+    content: '';
+    position: absolute;
+    top: -25px; /* Adjust as needed */
+    bottom: -25px; /* Adjust as needed */
+    right: -5px; /* Adjust as needed */
+    width: 2px; /* Adjust thickness as needed */
+    background-color: black; /* Adjust color as needed */
+}
+
+.view{
+    margin: auto;
+}
+
+.expanded {
+    width: calc(23rem + 550px);
+}
+
+.additional-content {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    height: 100px;
+    margin-left: 10px;
+}
