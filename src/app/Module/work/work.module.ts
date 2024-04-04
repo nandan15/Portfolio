@@ -7,6 +7,7 @@ import { DialogModule } from 'primeng/dialog';
 import {OverlayPanelModule} from 'primeng/overlaypanel';
 import {ButtonModule} from 'primeng/button';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     WorkComponent,
@@ -18,6 +19,7 @@ import { MatButtonModule } from '@angular/material/button';
     DialogModule,
     MatButtonModule,
     OverlayPanelModule,
+    MatIconModule,
     ButtonModule
   ],
   exports:[

@@ -1,17 +1,23 @@
 <div class="container">
-    <h4>Experience</h4>
-    <h2>MY WORK EXPERIENCE</h2>
+
+    <h2 class="work"><mat-icon style="margin-top: .15%;font-size: 30px;">work</mat-icon>MY WORK EXPERIENCE</h2>
     <div class="parent" [class.expanded]="isExpanded">
         <div class="child">
-            <h2>Software Development Engineer</h2>
+            <h2>Software Development Engineer Intern</h2>
             <h3>On-Site|Bangalore<br>November 2023 - Present</h3>
             
         </div>
         <button class="view" mat-button (click)="expandParent()">
-            <i class="fas fa-expand"></i>
+          <mat-icon>fast_forward</mat-icon>
         </button>
         <div *ngIf="isExpanded" class="additional-content"> 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laboriosam ad, omnis, obcaecati, totam quaerat veniam dicta eos consequatur nobis dolorum natus tenetur maiores architecto consequuntur necessitatibus similique id ratione!</p>
+            <p>During my tenure as a Software Development Engineer Intern, I've actively contributed to SaaS-based
+                projects, bringing three live projects to fruition. My role involved utilizing a robust tech stack, employing
+                Angular 16 for frontend development and .NET Core for backend infrastructure, including WebApi and MS
+                SQL. Additionally, I honed my skills in backend development using PHP Laravel framework and integrated
+                database management with SQL Server, leveraging Entity Framework 6 for efficient data handling. Through
+                these experiences, I've gained valuable insights into full-stack development methodologies and strengthened
+                my proficiency across diverse technologies.</p>
         </div>
     </div>
 </div>

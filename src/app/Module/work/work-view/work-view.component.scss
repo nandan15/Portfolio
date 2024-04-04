@@ -18,6 +18,12 @@
     justify-content: space-between; /* Align child and additional content at the ends */
 }
 
+.container {
+    display: flex;
+    justify-content: center; /* horizontally center the container */
+    align-items: center; /* vertically center the container */
+}
+
 .child {
     background-color: rgba(30, 143, 255, 0.479);
     width: 300px;
@@ -25,32 +31,57 @@
     height: 150px;
     border-radius: 5px;
     padding: 10px;
-    position: relative; /* Add this line */
+    position: relative; 
+    text-align: center;
+}
+
+.work{
+    display: flex;
+    margin-left: 2.5%;
+    box-shadow: 0 0 10px black;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: cadetblue;
+    padding:10px;
+    font-family: monospace;
+    font-size: 25px;
+    color: rgb(4, 103, 184);
 }
 
 .child::after {
     content: '';
     position: absolute;
-    top: -25px; /* Adjust as needed */
-    bottom: -25px; /* Adjust as needed */
-    right: -5px; /* Adjust as needed */
-    width: 2px; /* Adjust thickness as needed */
-    background-color: black; /* Adjust color as needed */
+    top: -25px; 
+    bottom: -25px; 
+    right: -8px; 
+    width: 2px; 
+    background-color: black; 
 }
 
-.view{
+.view {
     margin: auto;
 }
 
 .expanded {
-    width: calc(23rem + 550px);
+    width: calc(23rem + 80%);
+    padding: 20px;
 }
 
 .additional-content {
-    background: #fff;
+    background: #ffffff56;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 100%;
     padding: 10px;
-    height: 100px;
     margin-left: 10px;
+    padding-bottom: 20px;
+    text-align: justify;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.container {
+    display: flex;
+    justify-content: center; /* horizontally center the container */
+    align-items: center; /* vertically center the container */
+    height: 100vh; /* full height of the viewport */
 }
