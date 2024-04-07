@@ -1,7 +1,7 @@
 .parent {
     width: 23rem;
     min-width: 23rem; /* Ensure minimum width */
-    height: 200px;
+    height: 250px;
     background: transparent;
     margin-bottom: 50px;
     padding-top: 25px;
@@ -29,7 +29,7 @@
     background-color: rgba(30, 143, 255, 0.479);
     width: 300px;
     min-width: 300px;
-    height: 150px;
+    height: 200px;
     border-radius: 5px;
     padding: 10px;
     position: relative; 
@@ -38,7 +38,7 @@
 
 .work{
     display: flex;
-    margin-left: 1%;
+    margin-left: .8%;
     box-shadow: 0 0 10px black;
     width: fit-content;
     border-radius: 5px;
@@ -47,13 +47,14 @@
     font-family: monospace;
     font-size: 25px;
     color: rgb(4, 103, 184);
+    justify-content: space-around;
 }
 
 .child::after {
     content: '';
     position: absolute;
     top: -25px; 
-    bottom: -25px; 
+    bottom: -30px; 
     right: -8px; 
     width: 2px; 
     background-color: black; 
@@ -69,12 +70,13 @@
 }
 
 .additional-content {
-    background: #ffffff56;
+    background: #ffffff13;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     height: 100%;
     padding: 10px;
     margin-left: 10px;
+    font-weight: bold;
     padding-bottom: 20px;
     text-align: justify;
     margin-right: 20px;
